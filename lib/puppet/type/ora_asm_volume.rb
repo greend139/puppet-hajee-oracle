@@ -9,7 +9,7 @@ require 'orabase/resources/ora_asm_volume'
 
 # @nodoc
 module Puppet
-  newtype(:ora_asm_volume) do
+ Type::newtype(:ora_asm_volume) do
     include EasyType
     include ::OraUtils::Commands
     extend ::OraUtils::TitleParser

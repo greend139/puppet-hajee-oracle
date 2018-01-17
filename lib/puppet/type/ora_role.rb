@@ -10,7 +10,7 @@ module Puppet
   # Create a new type oracle_user. Oracle user, works in conjunction 
   # with the SqlResource
   #
-  newtype(:ora_role) do
+ Type::newtype(:ora_role) do
     include EasyType
     include ::OraUtils::OracleAccess
     extend ::OraUtils::TitleParser

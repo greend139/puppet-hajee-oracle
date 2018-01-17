@@ -8,7 +8,7 @@ require 'orabase/utils/commands'
 require 'puppet/type/ora_schema_definition/version'
 
 module Puppet
-  newtype(:ora_schema_definition) do
+ Type::newtype(:ora_schema_definition) do
     include EasyType
     include ::OraUtils::OracleAccess
     extend ::OraUtils::TitleParser

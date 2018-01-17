@@ -11,7 +11,7 @@ module Puppet
   # Create a new type oracle_user. Oracle user, works in conjunction 
   # with the §Resource provider
   #
-  newtype(:ora_user) do
+ Type::newtype(:ora_user) do
 
     class ::Puppet::Type::Ora_user
       include EasyType

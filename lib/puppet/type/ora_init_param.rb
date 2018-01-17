@@ -9,7 +9,7 @@ require 'orabase/utils/ora_tab'
 TITLE_PATTERN = /^((.*?\/)?(.*?)(:.*?)?(\@.*?)?)$/
 
 module Puppet
-  newtype(:ora_init_param) do
+ Type::newtype(:ora_init_param) do
     include EasyType
     include ::OraUtils::OracleAccess
 

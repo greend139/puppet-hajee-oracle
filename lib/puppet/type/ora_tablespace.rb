@@ -7,7 +7,7 @@ require 'orabase/utils/title_parser'
 
 
 module Puppet
-  newtype(:ora_tablespace) do
+ Type::newtype(:ora_tablespace) do
     include EasyType
     include ::OraUtils::OracleAccess
     extend ::OraUtils::TitleParser

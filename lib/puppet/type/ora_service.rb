@@ -7,7 +7,7 @@ require 'orabase/utils/title_parser'
 require 'orabase/utils/commands'
 
 module Puppet
-  newtype(:ora_service) do
+ Type::newtype(:ora_service) do
     include EasyType
     include ::OraUtils::OracleAccess
     extend ::OraUtils::TitleParser
