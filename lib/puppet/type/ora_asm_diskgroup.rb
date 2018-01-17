@@ -12,7 +12,7 @@ module Puppet
   # Create a new type oracle_user. Oracle user, works in conjunction 
   # with the SqlResource provider
   #
-  newtype(:ora_asm_diskgroup) do
+  Type::newtype(:ora_asm_diskgroup) do
     include EasyType
     include ::OraUtils::OracleAccess
     extend ::OraUtils::TitleParser

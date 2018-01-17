@@ -8,7 +8,7 @@ require 'orabase/utils/ora_tab'
 require 'orabase/utils/directories'
 
 module Puppet
-  newtype(:ora_database) do
+  Type::newtype(:ora_database) do
     include EasyType
     include ::OraUtils::OracleAccess
     include ::OraUtils::Directories
